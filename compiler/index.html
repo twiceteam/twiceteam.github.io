@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Compiler</title>
+</head>
+<body onbeforeunload="return myFunction()" class="main">
+
+  <div class="header-placeholder"></div>
+
+  <div id="header">
+    <div class="header-bar">
+        <ul class="header-ul">
+            <li><a href="#" class="header-link">TWICE</a></li>
+            <li><a href="#" class="header-link">Change Background</a></li>
+            <li><a href="https://www.paypal.com/donate/?hosted_button_id=QNXBHBFFW7ZH4" class="header-link">Donate &#10084</a></li>
+            <li><a href="#" class="header-link">About us</a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-header">
+        <ul>
+            <li><a class="menu menu-img" href="#end"></a></li>
+            <li><a class="logo" href="#">Tokyo Ghoul</a></li>
+        </ul>
+    </div>
+  </div>
+
+  
+
+  <div id="idk1">
+  
+    <div class="contandterm">
+      <!--controll panel-->
+    <div class="control-panel">
+      <ul class="control-ul">
+        <li>
+          <div class="langBox">
+            Select Language: 
+            &nbsp; &nbsp;
+            <select id="languages" onchange="changeLanguage()">
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+              <option value="php">PHP</option>
+              <option value="python">Python</option>
+              <option value="node">Node js</option>
+            </select>
+          </div>
+        </li>
+          <li class="button">
+            <button id="mojtaba" onclick="myFunction()" class="button button2">Run</button>
+          </li>
+         
+      </ul>
+      
+    </div>
+  
+     <!--editor-->
+      <div class="terminal">
+        <div class="editor" id="editor"></div>
+      </div>
+
+      
+    </div>
+    
+
+    <div class="inputOutput">
+      <div class="intxt">
+        <div class="txt">
+         <p class="para">input</p> 
+        </div>
+        <div class="in">
+          <textarea class="output"></textarea>
+        </div>
+      </div>
+      
+      <div class="intxt">
+        <div class="txt">
+         <p class="para">output</p> 
+        </div>
+        <div class="in">
+          <textarea class="output"></textarea>
+        </div>
+    </div>
+    <!--input and output div-->
+    
+  
+  </div>
+<div class="inou">
+  <div class="inputOutput2">
+    <div class="intxt2">
+      <div class="txt2">
+       <p class="par">input</p> 
+      </div>
+      <div class="in2">
+        <textarea class="output2"></textarea>
+      </div>
+    </div>
+    
+    <div class="intxt2">
+      <div class="txt2">
+       <p class="par">output</p> 
+      </div>
+      <div class="in2">
+        <textarea class="output2"></textarea>
+      </div>
+  </div>
+  </div>
+</div>
+  
+  
+  <video id="video-back" autoplay loop muted poster="band.mp4">
+    <source src="band.mp4" type="video/mp4">
+  </video>
+  
+  <div class="full-screen-video-container">
+  <video id="video" autoplay loop muted style="display: none;"controls loop></video>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="lib/ace.js"></script>
+  <script src="lib/theme-monokai.js"></script>
+  <script src="ide.js"></script>
+  
+  <script>
+    let x=0;
+    function myFunction() {
+      x++;
+      if(x%10==0){
+        alert("This website respect your time and won't show any advertisment.\nconsider our hard work and buy us a coffee :)");
+      }
+      
+    }
+  </script>
+
+
+  
+</body>
+
+</html>
