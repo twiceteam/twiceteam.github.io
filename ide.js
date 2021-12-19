@@ -17,7 +17,8 @@ document.getElementById("myfile").addEventListener("change", function() {
 
 document.getElementById("mojtaba").addEventListener("click", displayDate);
 function displayDate() {
-
+  document.getElementsByClassName("myoutput")[1].innerHTML = 'Waiting...';
+  document.getElementsByClassName("myoutput")[0].innerHTML = 'Waiting...';
 }
 
 window.onbeforeunload = function (e) {
@@ -49,7 +50,7 @@ $(document).ready(function () {
         type: 'POST',  // http method
         data: {         code: editor.getValue(),
                         lang: document.getElementById("languages").value,
-                        inpt: document.getElementsByClassName("myinput")[0,1].value },  // data to submit
+                        inpt: document.getElementsByClassName("myinput")[0].value + document.getElementsByClassName("myinput")[1].value},  // data to submit
         success: function (data, status, xhr) {
           document.getElementsByClassName("myoutput")[0].innerHTML = xhr.responseText;
           document.getElementsByClassName("myoutput")[1].innerHTML = xhr.responseText;

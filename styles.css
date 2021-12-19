@@ -130,7 +130,6 @@
   width: 100px;
   height: 100px;
   display: block;
-  background-color: red;
 }
 .control-panel {
   background: rgb(39, 39, 39);
@@ -321,7 +320,6 @@ label {
 }
 
 .output {
-  padding: 4px;
   border: 2px solid gray;
   resize: none;
   width: 100%;
@@ -333,6 +331,9 @@ label {
   color:white;
   font-family: monospace;
   font-size: 15px;
+  margin: 0% !important;
+  padding: 0% !important;
+  border: 0ch !important;
 }
 .inputOutput{
   width: 50%;
@@ -350,7 +351,6 @@ label {
 .in{
   width: 100%;
   height: 100%;
-
 }
 
 .inou{
@@ -377,7 +377,7 @@ label {
   .output2 {
     border: 2px solid gray;
     resize: none;
-    width: 98%;
+    width: 100%;
     height: 180px;
     opacity: 80%;
     background-color: rgb(0, 0, 0);
@@ -386,7 +386,9 @@ label {
     color:white;
     font-family: monospace;
     font-size: 15px;
-
+    margin: 0ch !important;
+    padding: 0 !important;
+    border: 0 !important;
   }
   .inputOutput2{
     width: 100%;
