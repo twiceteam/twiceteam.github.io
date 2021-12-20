@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" id="PageKeywords"  content="online java compiler, online c++ compiler, online python compiler, online c compiler, online compiler, online cpp compiler, c,java,python,c++,cpp,free,code,program" />
+    <meta dir="rtl" name="description" id="PageDescription"  content="online java compiler, online c++ compiler, online python compiler, online c compiler, online compiler, online cpp compiler, c,java,python,c++,cpp,free,code,program" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="Icon" href="icon.jpeg">
     <title>Online Compiler</title>
+
+
+
+    <script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+
+
+
 </head>
-<body onbeforeunload="return myFunction()" class="main">
+<body onbeforeunload="return myFunction()" class="main" style="background-color: black;">
 
   <div class="header-placeholder"></div>
 
+  <h1 class="keywords">online java compiler, online c++ compiler, online python compiler, online c compiler, online compiler, online cpp compiler, c,java,python,c++,cpp,free,code,program</h1>
   <div id="header">
     <div class="header-bar">
         <ul class="header-ul">
-            <li><a href="#" class="header-link">TWICE</a></li>
-            <li><a href="#" class="header-link">Change Background</a></li>
-            <li><a href="https://www.paypal.com/donate/?hosted_button_id=QNXBHBFFW7ZH4" class="header-link">Donate &#10084</a></li>
-            <li><a href="#" class="header-link">About us</a></li>
+            <li><a href="#" class="header-link">TWICE online compiler</a></li>
+            <li><label for="myfile" class="header-link">Change background video</label></li>
+            <li><a target="blank" href="https://www.paypal.com/donate/?hosted_button_id=QNXBHBFFW7ZH4" class="header-link">Donate &#10084</a></li>
+            <li><a target="blank" href="aboutUs.html" class="header-link">About us</a></li>
         </ul>
     </div>
-
+    <input type="file" id="myfile" name="myfile">
     <div class="mobile-header">
         <ul>
             <li><a class="menu menu-img" href="#end"></a></li>
@@ -30,12 +43,7 @@
     </div>
   </div>
 
-  
-
-  <div id="idk1">
-  
     <div class="contandterm">
-      <!--controll panel-->
     <div class="control-panel">
       <ul class="control-ul">
         <li>
@@ -45,9 +53,8 @@
             <select id="languages" onchange="changeLanguage()">
               <option value="c">C</option>
               <option value="cpp">C++</option>
-              <option value="php">PHP</option>
-              <option value="python">Python</option>
-              <option value="node">Node js</option>
+              <option value="py">Python</option>
+              <option value="java">Java</option>
             </select>
           </div>
         </li>
@@ -59,7 +66,7 @@
       
     </div>
   
-     <!--editor-->
+
       <div class="terminal">
         <div class="editor" id="editor"></div>
       </div>
@@ -68,54 +75,49 @@
     </div>
     
 
+    
     <div class="inputOutput">
+      <div class="control-panel1"><p class="para">input</p></div>
       <div class="intxt">
-        <div class="txt">
-         <p class="para">input</p> 
-        </div>
-        <div class="in">
-          <textarea class="output"></textarea>
-        </div>
+
+          <textarea class="output myinput"></textarea>
+
       </div>
-      
+    
+      <div class="control-panel1"><p class="para">output</p></div>
       <div class="intxt">
-        <div class="txt">
-         <p class="para">output</p> 
-        </div>
-        <div class="in">
-          <textarea class="output"></textarea>
-        </div>
+
+          <p class="output myoutput"></p>
+      
+      </div>
     </div>
-    <!--input and output div-->
     
   
-  </div>
+
 <div class="inou">
   <div class="inputOutput2">
+
+    <div class="distance"><div class="control-panel1"><p class="para">input</p></div></div>
     <div class="intxt2">
-      <div class="txt2">
-       <p class="par">input</p> 
-      </div>
+      <div class="txt2"></div>
       <div class="in2">
-        <textarea class="output2"></textarea>
+        <textarea class="output2 myinput"></textarea>
       </div>
     </div>
     
+    <div class="control-panel1"><p class="para">output</p></div>
     <div class="intxt2">
-      <div class="txt2">
-       <p class="par">output</p> 
-      </div>
+      <div class="txt2"></div>
       <div class="in2">
-        <textarea class="output2"></textarea>
+        <div class="output2 myoutput"></div>
       </div>
   </div>
   </div>
 </div>
   
-  
-  <video id="video-back" autoplay loop muted poster="band.mp4">
-    <source src="band.mp4" type="video/mp4">
-  </video>
+<video id="video-back" autoplay loop muted poster="BGvideo.mp4">
+    <source src="BGvideo.mp4" type="video/mp4">
+</video>
   
   <div class="full-screen-video-container">
   <video id="video" autoplay loop muted style="display: none;"controls loop></video>
@@ -131,7 +133,7 @@
     function myFunction() {
       x++;
       if(x%10==0){
-        alert("This website respect your time and won't show any advertisment.\nconsider our hard work and buy us a coffee :)");
+        alert("This website respect your time and won't show any advertisment.\nConsider our hard work and buy us a Cup of Coffee :) ");
       }
       
     }
