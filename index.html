@@ -11,7 +11,34 @@
     <link rel="Icon" href="icon.jpeg">
     <title>Online Compiler</title>
 
-
+  <!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);  
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('idu3n5ut85d3');
+  </script>
+  <!-- End of Async Drift Code -->
 
     <script type="text/javascript" 
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
@@ -20,7 +47,7 @@
 
 
 </head>
-<body onbeforeunload="return myFunction()" class="main" style="background-color: black;">
+<body onbeforeunload="return myFunction()" class="main">
 
   <div class="header-placeholder"></div>
 
@@ -30,7 +57,7 @@
         <ul class="header-ul">
             <li><a href="#" class="header-link">TWICE online compiler</a></li>
             <li><label for="myfile" class="header-link">Change background video</label></li>
-            <li><a target="blank" href="https://www.paypal.com/donate/?hosted_button_id=QNXBHBFFW7ZH4" class="header-link">Donate &#10084</a></li>
+            <li><a target="blank" href="https://www.buymeacoffee.com/twice" class="header-link">Donate &#10084</a></li>
             <li><a target="blank" href="aboutUs.html" class="header-link">About us</a></li>
         </ul>
     </div>
@@ -58,6 +85,7 @@
             </select>
           </div>
         </li>
+
           <li class="button">
             <button id="mojtaba" onclick="myFunction()" class="button button2">Run</button>
           </li>
@@ -84,8 +112,8 @@
 
       </div>
     
-      <div class="control-panel1"><p class="para">output</p></div>
-      <div class="intxt">
+      <div class="control-panel1 cont1"><p class="para">output</p></div>
+      <div class="intxt intxtt">
 
           <p class="output myoutput"></p>
       
@@ -115,7 +143,7 @@
   </div>
 </div>
   
-<video id="video-back" autoplay loop muted poster="BGvideo.mp4">
+<video id="video-back" autoplay loop muted poster="band.mp4">
     <source src="BGvideo.mp4" type="video/mp4">
 </video>
   
