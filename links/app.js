@@ -125,10 +125,10 @@
             type: 'POST',  // http method
             data: { pagecode: document.getElementById("code").value,},  // data to submit
             success: function (data, status, xhr) {
-
+                document.getElementsByTagName("body")[0].innerHTML = "<h3>" + String(xhr.responseText) + "</h3></br><p>This proccess will take some time, your page will be on this URL.</p>";
             },
             error: function (jqXhr, textStatus, errorMessage) {
-                
+                document.getElementsByTagName("body")[0].innerHTML = "<h3>Server Error</h3>";
             }
 		});
     }
