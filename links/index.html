@@ -12,7 +12,7 @@
         body{
             width: 100%;
             /*overflow-x: hidden;*/
-            background-color: black;
+            background-color: rgb(39, 26, 36);
             background-size: 100%;
             background-position: top;
             background-repeat: no-repeat;
@@ -21,12 +21,12 @@
             border: 0;
             font-family: newfont;
             text-align: center;
-            color: rgb(129, 72, 131);
+            color: rgb(202, 160, 221);
             cursor: default;
             overflow-x: hidden;
         }
         #loading{
-            background-color: rgb(43, 29, 44);
+            background-color: rgb(48, 28, 49);
             z-index: 5;
             position: absolute;
             top: 0;
@@ -60,6 +60,7 @@
             margin-top: 8px;
             opacity: 0.7;
             letter-spacing: 5px;
+            font-weight: 100;
             font-family: twice;
         }
         h2::selection{
@@ -78,7 +79,7 @@
             width: 80%;
             height: fit-content;
             border-style: solid;
-            border-color: rgba(180, 57, 180, 0.315);
+            border-color: rgba(211, 160, 221, 0.5);
             background-color:transparent;
             border-width: 2px;
             font-size: 35px;
@@ -90,13 +91,18 @@
             transition: 0.3s;
             display: block;
             position: relative;
+            background-color: rgba(78, 47, 82, 0.274);
         }
         a {
-            text-decoration: none;
             color: inherit;
+            font-size: 18px;
+            font-family: monospace;
         }
         a::selection{
             color: inherit;
+        }
+        p{
+            font-size: 18px;
         }
         .video{
             background-size: cover;
@@ -115,7 +121,7 @@
             background-size: cover;
             background-position: center;
             filter: blur(13px);
-            opacity: 0.25;
+            opacity: 0.3;
             z-index: -1;
             overflow: hidden;
         }
@@ -123,7 +129,7 @@
             background-size: cover;
             background-position: center;
             position: fixed;
-            background-color: rgba(223, 65, 209, 0.349);
+            background-color: rgba(197, 65, 223, 0.349);
             top: 0%;
             left: 0%;
             width: 100%;
@@ -137,9 +143,9 @@
             top: -80px;
             margin: auto;
             width: 90%;
-            background-color: rgb(105, 46, 97);
+            background-color: rgb(93, 46, 105);
             border-radius: 0 0 5px 5px;
-            color: rgb(231, 135, 226);
+            color: rgb(212, 135, 231);
             padding: 0;
             padding-top: 20px;
             padding-bottom: 15px;
@@ -179,9 +185,11 @@
         #name{
             text-align: center;
             font-family: newfont;
+            width: 80%;
             background: none;
             border: 2px dashed rgba(110, 69, 98, 0.562);
-            color: rgba(126, 71, 126, 0.534);
+            background-color: rgba(52, 33, 61, 0.274);
+            color: plum;
             font-size: 40px;
             margin: 0;
             font-weight: 200;
@@ -190,6 +198,15 @@
                          0 -2px 30px rgb(102, 52, 98),
                          2px 0 30px rgb(102, 52, 98),
                          -2px 0 30px rgb(102, 52, 98);
+            transition: 0.5s;
+            padding: 10px;
+        }
+        #name:focus{
+            border: 2px solid rgba(127, 90, 138, 0.562);
+            outline: none;
+        }
+        #name::placeholder{
+            color: rgba(211, 160, 221, 0.404);
         }
         #addlink{
             border-style: dashed;
@@ -229,7 +246,7 @@
             border-width: 2px;
             border-bottom-width: 0;
             border-style: dashed;
-            border-color: rgb(85, 51, 83);
+            border-color: rgb(77, 51, 85);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -253,13 +270,16 @@
         #done{
             margin-top: 20px;
             border-width: 1px;
-            border-color: plum;
+            border-color: rgb(209, 160, 221);
             font-weight: 100;
-            background-color: rgba(99, 68, 99, 0.459);
+            background-color: rgba(92, 68, 99, 0.459);
             color: plum;
         }
         @media only screen and (min-width: 768px) {
             .button{
+                width: 40%;
+            }
+            #name{
                 width: 40%;
             }
         }
@@ -267,6 +287,7 @@
 
 </head>
 <body>
+    <div id="loading"></div>
     <div id="errorlog"><div id="errorx">X</div><span id="error-m">Name can't be empty</span></div>
 
     <h1>TWICE</h1>

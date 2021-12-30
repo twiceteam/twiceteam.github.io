@@ -125,7 +125,8 @@
             type: 'POST',  // http method
             data: { pagecode: document.getElementById("code").value,},  // data to submit
             success: function (data, status, xhr) {
-                document.getElementsByTagName("body")[0].innerHTML = "<h3>" + String(xhr.responseText) + "</h3></br><p>This proccess will take some time, your page will be on this URL.</p>";
+                document.getElementsByTagName("body")[0].innerHTML = "<a href = '" + xhr.responseText +"'>" + String(xhr.responseText) + "</a><br><br><p>This proccess will take some time, your page will be on this URL.</p>";
+                document.getElementsByTagName("body")[0].innerHTML += '<div class="space-bg"><video class="video" muted="" loop="" playsinline="" autoplay><source src="../BGvideo.mp4" type="video/mp4"></video></div>';
             },
             error: function (jqXhr, textStatus, errorMessage) {
                 document.getElementsByTagName("body")[0].innerHTML = "<h3>Server Error</h3>";
