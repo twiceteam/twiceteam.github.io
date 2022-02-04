@@ -1,0 +1,359 @@
+.body{
+  height: 100%;
+  width: 100%;
+  font-family: monospace;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: rgb(75, 188, 226);
+}
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Georgia, serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+  height: 52px;
+}
+
+.topnav .search-container {
+  float: right;
+  width: 50%;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 90%;
+}
+@media screen and (max-width: 770px) {
+  
+  .topnav .search-container {
+    margin-right: 3%;
+    width: 50%;
+  }
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+#video-back{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 80%;
+  filter: blur(9px);
+}
+#video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 80%;
+  filter: blur(9px);
+}
+
+.list-of-specialisms{
+  position:sticky;
+  width: 20%;
+  display: inline-block;
+}
+
+.list-of-specialisms ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.address{
+  text-shadow: 2px 2px 5px rgba(78, 78, 78, 0.26);
+}
+.control-panel {
+  background: #2196F3;
+  text-align: right;
+  padding-top: 0px;
+  font-family: sans-serif;    
+  width: 100%;
+  height: 40px;
+  opacity: 90%;
+  color: white;
+  filter: blur(10%);
+  filter: brightness(90%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  font-family: monospace;
+  font-size: 15px;
+  display: inline-block;
+}
+
+
+.BOX{
+  border: #2196F3 2px solid;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.507);
+}
+.para{
+  margin-bottom: 0;
+  margin-right: 100%;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.photo{
+  border: 2px rgba(114, 198, 226, 0.247) solid;
+  height:auto;
+  width: 80px;
+  border-radius: 100px;
+  bottom:  0;
+  margin-right: 5%;
+}
+.txts{
+  position: absolute;
+  width: 30%;
+}
+.txt1{
+  position:absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  font-size: 12pt;
+  font-family: Georgia, serif;
+  color:#2196f3;
+}
+.blue-tick{
+  width: 8%;
+}
+.txt2{
+  font-size: 15px;
+  color: #76a5a7;
+  background-color: #76a5a725;
+  display: inline-block;
+  position:absolute; 
+  margin-top: 30px;
+  font-family: Georgia, serif;
+}
+.description{
+display: inline-block;
+margin-top: 50px;
+}
+.description h5{
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  margin: 2px;
+
+}
+
+.list-of-doctors{
+  width: 40%;
+  display: inline-block;
+  position: absolute;
+}
+.list-of-specialisms,.list-of-doctors{
+  margin-top: 10px;
+  margin-right: 1%;
+}
+
+body {
+  background: #f0f0f2;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.doc{
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.doc {
+  background: white;
+  margin: auto;
+  margin: 1%; 
+  width: 47%;
+  height: 120px;
+  padding: 20px 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 10px;
+  
+}
+
+.doc:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 5px solid #2196F3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.specialist{
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-family: Georgia, serif;
+}
+.specialist h3{
+display: inline-block;
+
+}
+.specialist {
+  background: white; 
+  padding-left: 10px;
+  padding-top: 1px;
+  width: 97%;
+  height: 30px;
+  margin-top: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 8px;
+  border: none;
+  
+}
+
+.specialist:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 6px solid #2195f3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+}
+
+@keyframes example {
+    0%   {border-left: 2px solid #24a9e6;}
+    25%  {border-left: 3px solid #26a2eb;}
+    50%  {border-left: 4px solid #259cec;}
+    100% {border-left: 5px solid #2195f3;}
+}
+.alll{
+  margin-left: 22%;
+}
+.txt1 {
+  text-shadow: 2px 2px 5px rgba(27, 171, 255, 0.432);
+}
+
+@media screen and (max-width: 1250px) {
+.alll{
+  margin-left: 0;
+}
+
+.topnav a.active  {
+  height: 30px;
+  padding-top: 7px;
+}
+.nav-txt{
+  height: 20px;
+  padding-top: 7px!important;
+  padding-bottom: 23px!important;
+}
+
+.list-of-specialisms,.list-of-doctors{
+  margin-left: 0; 
+}
+.list-of-doctors{
+  width: 78%;
+}
+.photo{
+  width: 60px;
+  margin-bottom:30px ;
+}
+.doc{
+  width: 98%;
+}
+.para{
+font-size: 12px;
+}
+.specialist{
+  font-size: 10px;
+}
+.description{
+  font-size: 14px;
+}
+
+.txts{
+  width: 60%;
+}
+.txt1{
+  font-size: 12px;
+}
+.txt2{
+  font-size: 12px;
+}
+.active,.nav-txt{
+  font-size: 12px !important;
+}
+.topnav .search-container {
+  margin-right: 3%;
+  width: 81%;
+}
+#input {
+  margin-top: 0;
+}
+.search-container button{
+  margin-top: 0!important;
+  padding-right: 6px!important;
+}
+
+}
+

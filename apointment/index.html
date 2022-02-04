@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="../Doctor/medical_symbol.png">
+    <title>List of Doctors</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navi">
+        <div class="topnav">
+            <a class="active" href="index.html">TWICE Apointment</a>
+            <a class="nav-txt" href="https://www.buymeacoffee.com/twice" target="blank"style="padding-bottom: 15.5px;">Donate 	&#10084;</a>
+            <a class="nav-txt" href="https://twice.team/aboutUs.html" target="blank" style="padding-bottom: 18.5px;">About us</a>
+            <di v class="search-container">
+                <form id="search" action="/action_page.php">
+                <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for names...">
+                <button class="searchBot" type="button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            </div>
+        <div style="padding-left:16px">
+    </div>    
+
+    <div class="alll">
+
+<!-- list of proffession -->
+<div class="list-of-specialisms">
+    <div class="control-panel"><p class="para">Category</p></div>
+    <div class="BOX">
+
+        <button id="myBtn" class="specialist" onClick="reply_click(this.id)">Show All</button>
+        <button id="myBtn1" class="specialist" onClick="reply_click(this.id)">Dentist</button>
+        <button id="myBtn2" class="specialist" onClick="reply_click(this.id)">Doctor</button>
+        <!--button id="myBtn3" class="specialist" onClick="reply_click(this.id)">B4</button>
+        <button id="myBtn4" class="specialist" onClick="reply_click(this.id)">B5</button>
+        <button id="myBtn5" class="specialist" onClick="reply_click(this.id)">B6</button-->
+
+        
+        
+    
+    </div>
+</div>
+    
+<!-- list of Doctors -->
+<div class="list-of-doctors">
+    <div class="control-panel">
+<p class="para">Doctors</p></div>
+    <div class="BOX">
+        <div>
+            <!--right one -->
+            <a id="doc" class="doc" href="../Doctor/index.html">       
+                <div id="all" class="all">
+                    <img class="photo" src="../Doctor/photo.jpg" alt="photograph" width="120" border="0"/>
+                    <span class="txts">
+                        <strong><span id="names" class="txt1">Dr.Janet Kavandi<img class="blue-tick" src="../Doctor/blue tick.png" alt=""><br></span></strong>
+                        <h3 class="txt2"><i class="fas fa-tooth" style="font-size:15px;"></i>   Doctor</h3>
+                        <div class="description"> 
+                            <h5 class="address">Hadhazi, 756, 112, 72</h5>
+                        </div>
+                    </span>  
+                </div>
+            </a>
+            <!--left one-->
+            <a id="doc" class="doc" href="../Doctor/index.html">       
+                <div id="all" class="all">
+                    <img class="photo" src="../Doctor/photo.jpg" alt="photograph" width="120" border="0"/>
+                    <!--img  src="../Doctor/photo.jpg" alt="photograph" width="100" border="0" style="border-radius: 100px;margin-top: 5px;"/--> 
+                    <span class="txts">
+                        <strong><span id="names" class="txt1">Dr.Janet Kavandi<img class="blue-tick" src="../Doctor/blue tick.png" alt=""><br></span></strong>
+                        <h3 class="txt2"><i class="fas fa-tooth" style="font-size:15px;"></i>   Dentist</h3>
+                        <div class="description">
+                            
+                            <h5 class="address">Hadhazi, 756, 112, 72</h5>
+                        </div>
+                    </span>  
+                </div>
+            </a>
+            <!--end of the first row-->
+
+            <!--2nd row-->
+
+            <!--right one -->
+            <a id="doc" class="doc" href="../Doctor/index.html">       
+                <div id="all" class="all">
+                    <img class="photo" src="../Doctor/photo.jpg" alt="photograph" width="120" border="0"/>
+                    <span class="txts">
+                        <strong><span id="names" class="txt1">Dr.Janet Kavandi<img class="blue-tick" src="../Doctor/blue tick.png" alt=""><br></span></strong>
+                        <h3 class="txt2"><i class="fas fa-tooth" style="font-size:15px;"></i>   Dentist</h3>
+                        <div class="description">
+                              
+                            <h5 class="address">Hadhazi, 756, 112, 72</h5>
+                        </div>
+                    </span>  
+                </div>
+            </a>
+            <!--left one-->
+            <a id="doc" class="doc" href="../Doctor/index.html">       
+                <div id="all" class="all">
+                    <img class="photo" src="../Doctor/photo.jpg" alt="photograph" width="120" border="0"/>
+                    <span class="txts">
+                        <strong><span id="names" class="txt1">Dr.Janet Kavandi<img class="blue-tick" src="../Doctor/blue tick.png" alt=""><br></span></strong>
+                        <h3 class="txt2"><i class="fas fa-tooth" style="font-size:15px;"></i>   Dentist</h3>
+                        <div class="description">
+                              
+                            <h5 class="address">Hadhazi, 756, 112, 72</h5>
+                        </div>
+                    </span>  
+                </div>
+            </a>
+            <!--end of the first row-->
+        
+        
+        </div>
+</div>
+</div>
+
+    </div>
+
+    
+    
+    <video id="video-back" autoplay loop muted poster="band.mp4">
+        <source src="../blue.mp4" type="video/mp4">
+    </video>
+
+    <script src="ide.js"></script>
+    
+</body>
+
+</html>
